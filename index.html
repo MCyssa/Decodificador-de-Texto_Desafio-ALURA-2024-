@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex">
+          <a class="logo" href="index.html">
+            <img src="./img/desbloquear.png" />
+            <h1>Decodificador</h1>
+          </a>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a>Contato</a>
+                <ul class="dropdown">
+                  <li><a href="https://github.com/MCyssa" target="_blank">Github</a></li>
+                  <li><a href="https://www.linkedin.com/in/mariacec%C3%ADlia-vandam/" target="_blank">Linkedin</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="container__principal">
+      <div class="container__criptografar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Digite seu texto"
+        ></textarea>
+      </div>
+      <div class="container__descriptografado">
+        <img class="imagem" src="./img/imagem_inicial.png" />
+        <div class="mensagem__descriptografada">
+          <h2 class="titulo__mensagem">Nenhuma mensagem</h2>
+          <p class="paragrafo__mensagem">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+      </div>
+      <div class="aviso">
+        <img src="./img/sinal-de-aviso.png" />
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div class="container__botoes">
+        <button
+          class="botao__criptografar"
+          type="button"
+          onclick="criptografar()"
+        >
+          Criptografar
+        </button>
+        <input
+          type="button"
+          class="botao__descriptografar"
+          value="Descriptografar"
+          onclick="descriptografar()"
+        />
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
